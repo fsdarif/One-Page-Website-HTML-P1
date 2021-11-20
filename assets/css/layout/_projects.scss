@@ -1,0 +1,59 @@
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    .single-project {
+      height: 300px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      color: white;
+      z-index: 2;
+      transition: .3s;
+        &:hover .project-content{
+            transform: scale(1);
+            opacity: 1;
+            visibility: visible;
+          }
+          .project-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            z-index: 2;
+            transition: .3s;
+            transform: scale(0);
+            transform-origin: bottom;
+            opacity: 0;
+            visibility: visible;
+            &:after{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: #333;
+                opacity: .7;
+                z-index: -1;
+            }
+            i {
+                font-size: 30px;
+              }
+              h4 {
+                font-size: 30px;
+                text-transform: capitalize;
+                margin: 10px 0;
+                span {
+                    display: block;
+                    font-size: 16px;
+                  }
+              }
+              a{
+                  color: white;
+              }
+          }
+      }
+  }

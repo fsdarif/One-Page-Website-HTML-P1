@@ -1,0 +1,42 @@
+
+.blog {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 30px;
+    .blog-img {
+        position: relative;
+        width: 100%;
+        .blog-meta {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: white;
+            padding: 8px 0;
+            border: 1px solid #b8b8b8;
+            margin-top: -22px;
+            position: relative;
+            width: 80%;
+            margin-left: 34px;
+          }
+      }
+      .blog-content {
+        margin-top: 20px;
+        padding: 20px;
+        h4 {
+            text-transform: capitalize;
+            font-weight: 600;
+          }
+          p {
+            margin: 10px 0;
+          }
+          a {
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 18px;
+            transition: .3s;
+            &:hover{
+                color: tomato;
+            }
+          }
+      }
+  }

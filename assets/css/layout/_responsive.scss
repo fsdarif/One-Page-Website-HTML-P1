@@ -1,0 +1,34 @@
+
+/* responsive for (992px - 1200px) device */
+/* min-width:992px = don't apply less than 992px device */
+/* max-width:1200px = don't apply more than 1200px device */
+/* main area width:1200px */
+/* checking point: 1000px */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .container{
+        width: 970px; /* left-right SAFE zone 992px-970px= 22px */
+    }
+}
+
+/* responsive for (768px - 991px) device */
+/* don't apply less than 768px device */
+/* don't apply more than 991px device */
+/* checking point = 800px */
+@media only screen and (min-width:768px) and (max-width:991px){
+    .container{
+        width: 750px; /* safe zone 18px */
+    }
+}
+
+/* responsive for (0px - 767px) device */
+/* don't apply more than 767px device */
+/* checking point = 400px */
+@media only screen and (max-width: 767px){
+    .container{
+        width: 300px;
+    }
+}
+/* this one share with mobile code only width  is increased here or can be coded seperately if needed */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+}

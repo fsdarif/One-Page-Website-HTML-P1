@@ -1,0 +1,52 @@
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    column-gap: 40px;
+    .contact-adress {
+        display: grid;
+        grid-template-columns: repeat(2, 48%);
+        grid-gap: 15px;
+        .single-contact {
+            display: flex;
+            align-items: center;
+            i {
+                background-color: tomato;
+                color: white;
+                margin-right: 20px;
+                padding: 15px;
+                font-size: 20px;
+                border-radius: 2px;
+              }
+              h4 {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 20px;
+                span {
+                    font-size: 14px;
+                    font-weight: 400;
+                    display: block;
+                    line-height: 19px;
+                  }
+              }
+          }
+      }
+      .contact-form{
+          input, textarea{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+          }
+          input[type=submit] {
+            background-color: tomato;
+            border: transparent;
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            transition: .3s;
+            &:hover{
+                background-color: red;
+            }
+          }
+      }
+  }
